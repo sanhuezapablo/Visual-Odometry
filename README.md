@@ -2,9 +2,9 @@
 
 ## **PROJECT DESCRIPTION**
 
-The aim of this project is to implement the different steps to estimate the 3D motion of the camera and provide as output a plot of the trajectory of a car driving around the city. As the car moves around the city, we track the change in position of the camera with respective to the initial point.
+This project aims to implement the different steps to estimate the 3D motion of a camera, and provide as output a plot of the trajectory of a car driving around a city. As the car moves around the city, we track the change in position of the camera with respective to the initial point.
 
-Please refer to [Project Report](https://github.com/adheeshc/Visual-Odometry/blob/master/Report/FINAL%20REPORT.pdf) for further description
+Please refer to [Project Report](https://github.com/sanhuezapablo/Visual-Odometry/blob/master/Report/FINAL%20REPORT.pdf) for further description
 
 ### Preparing the Input
 
@@ -12,12 +12,12 @@ Please refer to [Project Report](https://github.com/adheeshc/Visual-Odometry/blo
   <img src="/Images/pre.png" alt="pre">
 </p>
 
-The dataset used is the Oxford Dataset courtesy of Oxford’s Robotics Institute which if downloaded directly requires further pre-processing
+The dataset used is the Oxford Dataset (courtesy of Oxford’s Robotics Institute), which if downloaded directly requires further pre-processing
 
 - The input images are in Bayer format which have to be converted to RGB scale
 - The image has to be undistorted
 
-However, to speed up the processing, I have already done the same and saved them in a folder FRAMES which can be taken direclty from the folder Datasets. I have also converted to grayscale as it is easier to process in one channel. 
+However, to speed up the processing, I have already done the same and saved them in a folder called FRAMES, which can be taken directly from the folder Datasets. I have also converted to grayscale as it is easier to process in one channel. 
 
 <p align="center">
   <img src="/Images/30.jpg" alt="post">
@@ -57,7 +57,7 @@ The values are saved in a csv file updated2.csv
 
 Finally, the results are compared to against the rotation/translation parameters recovered using the cv2.findEssentialMat and cv2.recoverPose from opencv.The final trajectory for both methods are plotted compared.
 
-The values are saved in a csv file points.csv
+The values are saved in a csv file named points.csv
 
 ### Final Output
 
@@ -66,7 +66,7 @@ The values are saved in a csv file points.csv
 </p>
 
 
-## **DEPENDANCIES**
+## **DEPENDENCIES**
 
 - Python 3
 - OpenCV
